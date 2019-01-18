@@ -11,5 +11,7 @@ class GitTools < Formula
     commands.each do |c|
       bin.install("libexec/#{c}")
     end
+
+    (prefix + 'installed-git-tools').write('installed') # avoid Empty installation error
   end
 end
