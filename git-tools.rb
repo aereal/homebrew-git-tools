@@ -1,7 +1,7 @@
 class GitTools < Formula
   desc "Personal Git tools"
   homepage "https://github.com/aereal/git-tools"
-  url "git-tools"
+  head 'https://github.com/aereal/git-tools.git'
 
   def install
     commands = %w(
